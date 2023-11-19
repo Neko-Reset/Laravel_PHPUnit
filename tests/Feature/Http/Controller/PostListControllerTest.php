@@ -30,4 +30,5 @@ class PostListControllerTest extends TestCase
         $response->assertStatus(200);
         $response->assertOk();
     }
+
 }
