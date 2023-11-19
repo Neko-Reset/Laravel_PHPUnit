@@ -28,6 +28,7 @@ class PostListControllerTest extends TestCase
     {
         $response = $this->get("/");
         $response->assertStatus(200);
+        $this->withoutExceptionHandling();
         $response->assertOk();
     }
 
